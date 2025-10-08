@@ -1,0 +1,496 @@
+// Place your key bindings in this file to override the defaults
+[
+    // window navigation
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp",
+        "when": "!panelVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+b h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+b l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+b k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+b j",
+        "command": "workbench.action.navigateDown"
+    },
+
+    // explorer
+    {
+        "key": "ctrl+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.closeSidebar",
+        // "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+        "when": "explorerViewletVisible"
+    },
+    {
+        "key": "t",
+        "command": "workbench.files.action.createFileFromExplorer",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "f2",
+        "command": "-renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "m",
+        "command": "workbench.files.action.createFolderFromExplorer",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "d d",
+        "command": "filesExplorer.cut",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-filesExplorer.cut",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "y y",
+        "command": "filesExplorer.copy",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-filesExplorer.copy",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-filesExplorer.paste",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "shift+d",
+        "command": "moveFileToTrash",
+        "when": "explorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !inputFocus"
+    },
+    {
+        "key": "delete",
+        "command": "-moveFileToTrash",
+        "when": "explorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !inputFocus"
+    },
+
+    // splitting window
+    {
+        "key": "ctrl+b shift+5",
+        "command": "workbench.action.splitEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+b shift+'",
+        "command": "workbench.action.splitEditorToBelowGroup"
+    },
+
+    // // scm
+    // {
+    //     "key": "ctrl+shift+g",
+    //     "command": "-workbench.view.scm",
+    //     "when": "workbench.scm.active"
+    // },
+    // {
+    //     "key": "\\ g",
+    //     "command": "workbench.view.scm",
+    //     "when": "editorTextFocus && vim.mode == 'Normal'"
+    // },
+    // {
+    //     "key": "g q",
+    //     "command": "workbench.action.closeSidebar",
+    //     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm' && !textInputFocus"
+    // },
+    // {
+    //     "key": "ctrl+k",
+    //     "command": "workbench.scm.action.focusPreviousResourceGroup",
+    //     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    // },
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "workbench.scm.action.focusNextResourceGroup",
+    //     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    // },
+    // // INDIVIDUAL FILES NOT WORKING, CAN'T STAGE/UNSTAGE FROM SCM, SEE https://github.com/microsoft/vscode/issues/24916
+    // {
+    //     "key": "s",
+    //     "command": "git.stage",
+    //     "when": "scmProvider == 'git' && activeViewlet == 'workbench.view.scm' && !textInputFocus"
+    // },
+    // {
+    //     "key": "shift+s",
+    //     "command": "git.stageAll",
+    //     "when": "scmProvider == 'git' && activeViewlet == 'workbench.view.scm' && !textInputFocus"
+    // },
+    // {
+    //     "key": "u",
+    //     "command": "git.unstage",
+    //     "when": "scmProvider == 'git' && activeViewlet == 'workbench.view.scm' && !textInputFocus"
+    // },
+    // {
+    //     "key": "shift+u",
+    //     "command": "git.unstageAll",
+    //     "when": "scmProvider == 'git' && activeViewlet == 'workbench.view.scm' && !textInputFocus"
+    // },
+    // {
+    //     "key": "shift+x",
+    //     "command": "git.cleanAll",
+    //     "when": "scmProvider == 'git' && activeViewlet == 'workbench.view.scm' && !textInputFocus"
+    // },
+    {
+        "key": "ctrl+g c",
+        "command": "git.checkout",
+    },
+    {
+        "key": "ctrl+g l",
+        "command": "git.pull",
+    },
+    {
+        "key": "ctrl+g h",
+        "command": "git.push",
+    },
+    {
+        "key": "ctrl+g b",
+        "command": "git.branch",
+    },
+    {
+        "key": "ctrl+g shift+b",
+        "command": "git.branchFrom",
+    },
+
+    // fugitive
+    {
+        "key": "\\ g",
+        "command": "fugitive.open",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "g shift+/",
+        "command": "fugitive.help",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "=",
+        "command": "fugitive.toggleInlineDiff",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "shift+9",
+        "command": "fugitive.previousHunk",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "shift+0",
+        "command": "fugitive.nextHunk",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "g c",
+        "command": "git.checkout",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "g l",
+        "command": "git.pull",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "g h",
+        "command": "git.push",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "g b",
+        "command": "git.branch",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+    {
+        "key": "g shift+b",
+        "command": "git.branchFrom",
+        "when": "(vim.mode == 'Normal' || !vim.mode) && resourceScheme == fugitive && editorTextFocus"
+    },
+
+    // terminal
+    {
+        "key": "ctrl+alt+;",
+        "command": "workbench.action.closePanel",
+        "when": "panelVisible"
+    },
+    {
+        "key": "ctrl+alt+;",
+        "command": "workbench.action.focusPanel",
+        "when": "!panelVisible"
+    },
+    {
+        "key": "ctrl+b shift+k",
+        "command": "workbench.action.terminal.resizePaneUp"
+    },
+    {
+        "key": "ctrl+b shift+j",
+        "command": "workbench.action.terminal.resizePaneDown"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "panelVisible"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.createTerminalEditor"
+    },
+
+    // // insert line above/below
+    // // done in settings.json as vim remaps because it messes with `f[`
+    // {
+    //     "key": "[ space",
+    //     "command": "vim.remap",
+    //     "when": "editorTextFocus && vim.mode == 'Normal' && vim.mode != 'CommandlineInProgress'",
+    //     "args": {
+    //         "after": ["m", "z", "O", "<Esc>", "`", "z"]
+    //     }
+    // },
+    // {
+    //     "key": "] space",
+    //     "command": "vim.remap",
+    //     "when": "editorTextFocus && vim.mode == 'Normal'",
+    //     "args": {
+    //         "after": ["m", "z", "o", "<Esc>", "`", "z"]
+    //     }
+    // },
+
+    // copilot
+    {
+        "key": "shift+tab",
+        "command": "editor.action.inlineSuggest.trigger",
+        "when": "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+    },
+    {
+        "key": "alt+\\",
+        "command": "-editor.action.inlineSuggest.trigger",
+        "when": "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.inlineSuggest.commit",
+        "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.inlineSuggest.commit",
+        "when": "inInlineEditsPreviewEditor"
+    },
+    {
+        "key": "shift+tab",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "tab",
+        "command": "-acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+n shift+i",
+        "command": "workbench.action.chat.open",
+        "when": "!chatSetupHidden"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-workbench.action.chat.open",
+        "when": "!chatSetupHidden"
+    },
+    {
+        "key": "ctrl+n i",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+n o",
+        "command": "inlineChat.start",
+        "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-inlineChat.start",
+        "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+    },
+    {
+        "key": "ctrl+n i",
+        "command": "workbench.action.terminal.chat.start",
+        "when": "chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-workbench.action.terminal.chat.start",
+        "when": "chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || chatIsEnabled && terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+n p",
+        "command": "workbench.action.quickchat.toggle",
+        "when": "chatIsEnabled"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "-workbench.action.quickchat.toggle",
+        "when": "chatIsEnabled"
+    },
+    {
+        "key": "ctrl+n c",
+        "command": "workbench.action.chat.newChat",
+        "when": "view == 'workbench.panel.chat.view.copilot'"
+    },
+    {
+        "key": "ctrl+n q",
+        "command": "workbench.action.closeAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+n h",
+        "command": "workbench.action.chat.history",
+        "when": "view == 'workbench.panel.chat.view.copilot'"
+    },
+    
+    // toggle sidebar (after search but also generally)
+    {
+        "key": "ctrl+alt+p",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    
+    // open editors
+    {
+        "key": "ctrl+o p",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "!workbench.explorer.openEditorsView.visible"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "ctrl+o p",
+        "command": "workbench.explorer.openEditorsView.toggleVisibility",
+        "when": "workbench.explorer.openEditorsView.visible"
+    },
+    {
+        "key": "ctrl+o v",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "ctrl+o w",
+        "command": "workbench.action.files.revealActiveFileInWindows"
+    },
+    {
+        "key": "ctrl+k r",
+        "command": "-workbench.action.files.revealActiveFileInWindows"
+    },
+    
+    // refocus on editor
+    {
+        "key": "ctrl+i e",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    
+    // full screen
+    {
+        "key": "f12",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+k z",
+        "command": "-workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "f10",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    
+    // close editor / window
+    {
+        "key": "shift+; q",
+        "command": "workbench.action.closeActiveEditor",
+        "when":"!editorTextFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+]

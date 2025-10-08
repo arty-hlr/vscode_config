@@ -1,0 +1,44 @@
+{
+    "update.mode": "manual",
+    "update.enableWindowsBackgroundUpdates": false,
+    "workbench.colorTheme": "Default Dark+",
+    "explorer.confirmDelete": false,
+    "debug.openDebug": "openOnDebugBreak",
+    "editor.tabCompletion": "off",
+    "powershell.integratedConsole.focusConsoleOnExecute": true,
+    "files.defaultLanguage": "",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "powershell.buttons.showPanelMovementButtons": false,
+    "powershell.codeFolding.showLastLine": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "github.gitAuthentication": false,
+    "github.copilot.advanced": {},
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "inlineChat.enableV2": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["[", " "],
+            "after": ["m", "z", "y", "y", "p", "`", "z", "j", "m", "z", "k", "0", "d", "$", "`", "z"] // don't ask, weird marking behavior so can't use the same as `] `
+        },
+        {
+            "before": ["]", " "],
+            "after": ["m", "z", "o", "<Esc>", "`", "z"]
+        }
+    ],
+    "workbench.startupEditor": "none",
+    "terminal.integrated.allowChords": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": "none",
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.showTabs": "none",
+    "python.analysis.typeCheckingMode": "basic"
+}
