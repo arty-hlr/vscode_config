@@ -14,7 +14,6 @@
     "github.gitAuthentication": false,
     "github.copilot.advanced": {},
     "github.copilot.chat.codesearch.enabled": true,
-    "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot.enable": {
         "*": true,
         "plaintext": true,
@@ -34,11 +33,13 @@
     ],
     "workbench.startupEditor": "none",
     "terminal.integrated.allowChords": false,
-    "workbench.activityBar.location": "hidden",
     "editor.minimap.enabled": false,
     "workbench.editor.showTabs": "none",
     "zenMode.centerLayout": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.showTabs": "none",
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "github.copilot.chat.agent.thinkingTool": true,
+    "oaicopilot.baseUrl": "https://lmstudio.macstudio.lan/v1",
+    "workbench.activityBar.location": "hidden",
 }
