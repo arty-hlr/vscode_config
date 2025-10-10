@@ -413,13 +413,23 @@
         "command": "workbench.action.chat.history",
         "when": "view == 'workbench.panel.chat.view.copilot'"
     },
-    
+    {
+        "key": "ctrl+n m",
+        "command": "workbench.action.maximizeAuxiliaryBar",
+        "when": "!auxiliaryBarMaximized"
+    },
+    {
+        "key": "ctrl+n m",
+        "command": "workbench.action.restoreAuxiliaryBar",
+        "when": "auxiliaryBarMaximized"
+    },
+
     // toggle sidebar (after search but also generally)
     {
         "key": "ctrl+alt+p",
         "command": "workbench.action.toggleSidebarVisibility"
     },
-    
+
     // open editors
     {
         "key": "ctrl+o p",
@@ -448,7 +458,7 @@
         "key": "ctrl+k r",
         "command": "-workbench.action.files.revealActiveFileInWindows"
     },
-    
+
     // refocus on editor
     {
         "key": "ctrl+i e",
@@ -458,7 +468,7 @@
         "key": "ctrl+1",
         "command": "-workbench.action.focusFirstEditorGroup"
     },
-    
+
     // full screen
     {
         "key": "f12",
@@ -474,7 +484,7 @@
         "key": "f10",
         "command": "workbench.action.toggleStatusbarVisibility"
     },
-    
+
     // close editor / window
     {
         "key": "shift+; q",
@@ -511,10 +521,20 @@
         "key": "ctrl+shift+9",
         "command": "workbench.action.openGlobalKeybindingsFile"
     },
-    
+
     // switch account (for copilot)
     {
         "key": "ctrl+'",
         "command": "workbench.extensions.action.manageAccountPreferences"
+    },
+    {
+        "key": "ctrl+o o",
+        "command": "workbench.action.files.openFolder",
+        "when": "openFolderWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "-workbench.action.files.openFolder",
+        "when": "openFolderWorkspaceSupport"
     },
 ]
