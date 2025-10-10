@@ -511,4 +511,10 @@
         "key": "ctrl+shift+9",
         "command": "workbench.action.openGlobalKeybindingsFile"
     },
+    
+    // switch account (for copilot)
+    {
+        "key": "ctrl+'",
+        "command": "workbench.extensions.action.manageAccountPreferences"
+    },
 ]
