@@ -479,7 +479,7 @@
     {
         "key": "shift+; q",
         "command": "workbench.action.closeActiveEditor",
-        "when":"!editorTextFocus"
+        "when":"!editorTextFocus && !textInputFocus"
     },
     {
         "key": "ctrl+w",
@@ -492,5 +492,23 @@
     {
         "key": "ctrl+shift+w",
         "command": "-workbench.action.closeWindow"
+    },
+
+    // keybindings
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+9",
+        "command": "workbench.action.openGlobalKeybindingsFile"
     },
 ]
