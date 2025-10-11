@@ -527,6 +527,8 @@
         "key": "ctrl+'",
         "command": "workbench.extensions.action.manageAccountPreferences"
     },
+
+    // open folder
     {
         "key": "ctrl+o o",
         "command": "workbench.action.files.openFolder",
