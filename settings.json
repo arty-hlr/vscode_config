@@ -42,4 +42,6 @@
     "github.copilot.chat.agent.thinkingTool": true,
     "oaicopilot.baseUrl": "https://lmstudio.macstudio.lan/v1",
     "workbench.activityBar.location": "hidden",
+    "window.newWindowDimensions": "inherit",
+    "window.restoreWindows": "none",
 }
