@@ -539,4 +539,48 @@
         "command": "-workbench.action.files.openFolder",
         "when": "openFolderWorkspaceSupport"
     },
+
+    // maximize panel
+    {
+        "command": "runCommands",
+        "key": "ctrl+alt+z",
+        "args":{
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.alignPanelCenter",
+                "workbench.action.toggleMaximizedPanel",
+            ]
+        },
+        "when": "panelFocus && !panelMaximized"
+    },
+    {
+        "command": "runCommands",
+        "key": "ctrl+alt+z",
+        "args":{
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.alignPanelJustify",
+                "workbench.action.terminal.kill",
+                "workbench.action.terminal.new",
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "ta\n"
+                    }
+                }
+            ]
+        },
+        "when": "hasRemoteServer && panelFocus && panelMaximized"
+    },
+    {
+        "command": "runCommands",
+        "key": "ctrl+alt+z",
+        "args":{
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.alignPanelJustify",
+            ]
+        },
+        "when": "!hasRemoteServer && panelFocus && panelMaximized"
+    },
 ]

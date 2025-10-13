@@ -44,4 +44,5 @@
     "workbench.activityBar.location": "hidden",
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
+    "terminal.integrated.stickyScroll.enabled": false,
 }
