@@ -45,4 +45,5 @@
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
     "terminal.integrated.stickyScroll.enabled": false,
+    "editor.stickyScroll.enabled": false,
 }
