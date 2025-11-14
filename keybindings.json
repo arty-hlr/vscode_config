@@ -489,7 +489,7 @@
     {
         "key": "shift+; q",
         "command": "workbench.action.closeActiveEditor",
-        "when":"!editorTextFocus && !textInputFocus"
+        "when":"!editorTextFocus && !inputFocus"
     },
     {
         "key": "ctrl+w",
