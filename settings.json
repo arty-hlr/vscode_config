@@ -46,4 +46,15 @@
     "window.restoreWindows": "none",
     "terminal.integrated.stickyScroll.enabled": false,
     "editor.stickyScroll.enabled": false,
+    "todohighlight.include": [
+        "**/*.txt",
+        "**/*.md",
+        "**/*.sh",
+        "**/*.py",
+        "**/*.yaml",
+        "**/*.yml",
+        "**/*.tf*",
+    ],
+    "todohighlight.isEnable": true,
+    "chat.agent.maxRequests": 100,
 }
