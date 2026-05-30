@@ -18,22 +18,22 @@
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
     },
-    {
-        "key": "ctrl+b h",
-        "command": "workbench.action.navigateLeft"
-    },
-    {
-        "key": "ctrl+b l",
-        "command": "workbench.action.navigateRight"
-    },
-    {
-        "key": "ctrl+b k",
-        "command": "workbench.action.navigateUp"
-    },
-    {
-        "key": "ctrl+b j",
-        "command": "workbench.action.navigateDown"
-    },
+    // {
+    //     "key": "ctrl+b h",
+    //     "command": "workbench.action.navigateLeft"
+    // },
+    // {
+    //     "key": "ctrl+b l",
+    //     "command": "workbench.action.navigateRight"
+    // },
+    // {
+    //     "key": "ctrl+b k",
+    //     "command": "workbench.action.navigateUp"
+    // },
+    // {
+    //     "key": "ctrl+b j",
+    //     "command": "workbench.action.navigateDown"
+    // },
 
     // explorer
     {
@@ -127,11 +127,13 @@
 
     // splitting window
     {
-        "key": "ctrl+b shift+5",
+        // "key": "ctrl+b shift+5",
+        "key": "ctrl+shift+5",
         "command": "workbench.action.splitEditorToRightGroup"
     },
     {
-        "key": "ctrl+b shift+'",
+        // "key": "ctrl+b shift+'",
+        "key": "ctrl+shift+'",
         "command": "workbench.action.splitEditorToBelowGroup"
     },
 
@@ -272,11 +274,13 @@
         "when": "!panelVisible"
     },
     {
-        "key": "ctrl+b shift+k",
+        // "key": "ctrl+b shift+k",
+        "key": "ctrl+shift+k",
         "command": "workbench.action.terminal.resizePaneUp"
     },
     {
-        "key": "ctrl+b shift+j",
+        // "key": "ctrl+b shift+j",
+        "key": "ctrl+shift+j",
         "command": "workbench.action.terminal.resizePaneDown"
     },
     {
