@@ -1,0 +1,55 @@
+[
+	{
+		"name": "LM Studio",
+		"vendor": "customendpoint",
+		"apiKey": "${input:chat.lm.secret.-52dedc5b}",
+		"apiType": "chat-completions",
+		"models": [
+			{
+				"id": "gemma-4-26b-a4b-it",
+				"name": "Gemma 4 26B",
+				"url": "https://lmstudio.macstudio.lan/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 256000,
+				"maxOutputTokens": 32000
+			},
+			{
+				"id": "qwen3-coder-next",
+				"name": "Qwen3 Coder Next",
+				"url": "https://lmstudio.macstudio.lan/v1",
+				"toolCalling": true,
+				"vision": false,
+				"maxInputTokens": 256000,
+				"maxOutputTokens": 32000
+			},
+			{
+				"id": "mistralai/devstral-small-2-2512",
+				"name": "Devstral Small 2",
+				"url": "https://lmstudio.macstudio.lan/v1",
+				"toolCalling": true,
+				"vision": false,
+				"maxInputTokens": 256000,
+				"maxOutputTokens": 32000
+			},
+			{
+				"id": "qwen3.6-35b-a3b-mtp",
+				"name": "Qwen3.6 35B",
+				"url": "https://lmstudio.macstudio.lan/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 256000,
+				"maxOutputTokens": 32000
+			},
+			{
+				"id": "qwen3.6-35b-a3b-uncensored-hauhaucs-aggressive",
+				"name": "Qwen3.6 35B Uncensored",
+				"url": "https://lmstudio.macstudio.lan/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 256000,
+				"maxOutputTokens": 32000
+			}
+		]
+	}
+]
